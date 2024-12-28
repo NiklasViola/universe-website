@@ -1,0 +1,194 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+background-image: url(images/bryan-goff-RF4p4rTM-2s-unsplash.jpg);
+background-attachment: fixed; /* Parallax-Effekt */
+background-size: cover;
+background-position: center;
+}
+
+
+.banner{
+  width: 100%;
+  height: 30rem;
+  color:white;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 34px;
+} 
+
+.banner a{
+  color:aliceblue;
+  border: 3px solid white;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 20px !important;
+  cursor: pointer;
+  transition: background-color 700ms ease-out;
+  
+}
+.banner a:hover{
+  background: darkslateblue;
+  border: 3px solid black;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  
+}
+
+header{
+  background-color: black;
+  color:aliceblue;
+  height: 50px;
+  display: flex;
+  padding-bottom: 18px;
+  position: sticky;
+  z-index: 1000;
+  top:0;
+  background-color: black;
+}
+header a{
+  margin: 30px;
+  font-size: 20px;
+}
+
+.grid-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.grid-container img{
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border: 2px solid white;
+  border-radius: 30px;
+
+}
+
+.grid-container img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+
+}
+.section-title{
+  margin-bottom: 100px; /* Abstand nach unten */
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  
+  
+}
+
+.planet-details{
+  color: aliceblue;
+  margin-top: auto;
+ }
+
+
+.planet-details h2{
+font-size: 40px;
+text-align: center;
+margin: 100px;
+margin-top: 180px;
+margin-bottom: 40px;
+
+}
+
+
+
+.planet-card p{ 
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Halbtransparentes Schwarz */
+  padding: 10px;
+  border-radius: 100px;
+
+}
+.planet-container{
+  
+  display: grid; /* Grid-Layout aktivieren */
+    grid-template-columns: repeat(3, 1fr); /* 3 gleich große Spalten */
+    gap: 20px; /* Abstand zwischen den Karten */
+    max-width: 1200px; /* Maximale Breite für den Container */
+    margin: 0 auto; /* Zentriert auf der Seite */
+    padding: 20px;
+   
+}
+
+.planet-card img{
+  width: 120px;
+  height:auto;
+  transition: transform 0.3s ease;
+}
+.planet-card img:hover{
+  transform: rotate(10deg) scale(1.1);
+}
+
+.planet-card:hover {
+  transform: translateY(-10px) rotate(5deg); /* Leichte Rotation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.planet-details a{
+  border: 2px solid solid aliceblue;
+  display: inline-block;
+  color:aliceblue;
+  padding:10px;
+  text-decoration: none;
+  margin-top: 50px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planet-details a:hover{
+  background: darkslateblue;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+
+}
+
+footer{
+  color:aliceblue;
+  background-color: black;
+  height: 12rem;
+  padding: 40px;
+  font-size: 20px;
+  opacity: 0.7;
+  
+}
+
+
+footer a{
+  color:aliceblue;
+}
+
+
+@media only screen and (max-width:780px){
+  .planet-container{
+    grid-template-columns: 1fr;
+  }
+  .planet-card img {
+    width: 80px;
+  }
+
+  h1{
+    display: none;
+  }
+}
+
+hr{
+
+  background-color: aliceblue;
+}
+
+
